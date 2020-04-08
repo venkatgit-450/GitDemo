@@ -47,6 +47,7 @@ public void verify_that_user_is_successfully_logged_in() throws Throwable {
    if( driver.findElement(By.xpath("/html/body/header/div[2]/div/div/div[2]/nav/div[2]/ul/li[9]/a/span")).isDisplayed())
    {
 	   System.out.println("logged in successfully");
+	   Thread.sleep(2000);
    }
    else 
    {
