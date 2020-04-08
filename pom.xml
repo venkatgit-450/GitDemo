@@ -4,14 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>Automation</groupId>
-  <artifactId>Chary</artifactId>
+  <groupId>hrishi</groupId>
+  <artifactId>karthee</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>Chary</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -19,6 +16,11 @@
   </properties>
 
   <dependencies>
+   <dependency>
+	<groupId>info.cukes</groupId>
+	<artifactId>cucumber-testng</artifactId>
+	<version>1.2.5</version>
+</dependency>
 <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
 <dependency>
     <groupId>info.cukes</groupId>
@@ -26,6 +28,7 @@
     <version>1.2.5</version>
     <scope>test</scope>
 </dependency>
+
 
   <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
 <dependency>
@@ -62,12 +65,6 @@
     <version>2.12.2</version>
     <scope>provided</scope>
 </dependency>
-  <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>gherkin</artifactId>
-    <version>11.0.0</version>
-</dependency>
   <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
 <dependency>
     <groupId>org.powermock</groupId>
@@ -94,11 +91,16 @@
     <artifactId>selenium-java</artifactId>
     <version>4.0.0-alpha-4</version>
 </dependency>
-  
- 
-   
- 
-  </dependencies>
+  <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.13.1</version>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/com.sun/tools -->
+
+
+</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
